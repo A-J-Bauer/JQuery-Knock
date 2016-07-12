@@ -1,5 +1,5 @@
 # JQuery-Knock
-A jQuery plugin for detecting a user knock code / beat sequence.
+A jQuery plugin for detecting a knock code / beat sequence e.g. for activating hidden features..
 
 # Example
 ```
