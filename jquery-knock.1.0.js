@@ -48,9 +48,10 @@
                 }
 
                 if (beatCount[e.type] == settings.beat.length) {
-                    var r = Math.round(beatRec[e.type][0] / settings.beat[0]);
-                    for (var i = 0; i < settings.beat.length; i++) {
-                        if (r != Math.round(beatRec[e.type][i] / settings.beat[i])) {
+                    var r1 = beatRec[e.type][0] / settings.beat[0];
+                    for (var i = 1; i < settings.beat.length; i++) {
+                        var r2 = beatRec[e.type][i] / settings.beat[i];
+                        if ((r2 < r1 - 0.5) || (r2 > r1 + 0.5)) {
                             return;
                         }
                     }
