@@ -1,7 +1,7 @@
 # JQuery-Knock
 A jQuery plugin for detecting a user knock code / beat sequence.
 
-# Example:
+# Example
 ```
 $('#canvas').knock({
 	onRecognized: function () {
